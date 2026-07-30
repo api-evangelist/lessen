@@ -1,8 +1,31 @@
 aid: lessen
 name: Lessen
-description: 'Lessen is a company surfaced as a portfolio company of fifth-wall, general-catalyst and
-  added to the API Evangelist network as a stub for enrichment. Sector: proptech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Lessen is a Scottsdale, Arizona based property services and facilities
+  management technology company that connects commercial and residential property
+  owners and managers with a nationwide network of vetted service providers for
+  repairs, maintenance, turns, make-readies and capital projects. The company operates
+  a technology platform stack — One by Lessen for work-order, vendor-sourcing and
+  invoicing workflow, Lessen 360 for multifamily maintenance, Lessen Pro for affiliate
+  contractors, Aiden for AI-assisted work-order creation, and the Lessen Marketplace
+  for procurement — supported by mobile apps for tenants, property managers and
+  vendors. Lessen serves retail, financial services, healthcare, food service,
+  industrial, hospitality and education properties alongside single-family and
+  multifamily residential portfolios. Lessen acquired SMS Assist in 2023 and is
+  backed by Fifth Wall and General Catalyst. Lessen publishes no public developer
+  portal, API reference or OpenAPI definition; its named platform integrations are
+  delivered as private partner connections rather than a self-serve API program.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/650de1047e0c5de5860e054c/66b6ca4070706d360dfe6309_Template%20for%20_Home_.jpg
 url: https://raw.githubusercontent.com/api-evangelist/lessen/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,21 @@ x-backed-by:
 - general-catalyst
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-api-surface: none-public
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Proptech
+- Real Estate
+- Property Management
+- Facilities Management
+- Field Service Management
+- Work Order Management
+- Maintenance
+- Marketplace
+- Construction
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +58,42 @@ maintainers:
 common:
 - type: Website
   url: https://www.lessen.com/
+- type: About
+  url: https://www.lessen.com/about-lessen
+- type: Blog
+  url: https://www.lessen.com/resource-type/blog
+- type: Press
+  url: https://www.lessen.com/resource-type/press
+- type: NewsAndEvents
+  url: https://www.lessen.com/news-events
+- type: Support
+  url: https://www.lessen.com/contact/contact-us
+- type: Login
+  url: https://client-one.smsassist.com/Account/Login
+- type: TermsOfService
+  url: https://www.lessen.com/legal/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.lessen.com/legal/privacy-policy
+- type: AcceptableUsePolicy
+  url: https://www.lessen.com/legal/acceptable-use-policy
+- type: Security
+  url: https://www.lessen.com/legal/security-policy
+- type: StatusPage
+  url: https://status.lessen.com/
+- type: Careers
+  url: https://www.lessen.com/careers
+- type: Integrations
+  url: integrations/_index.yml
+- type: LLMsTxt
+  url: llms/lessen-llms.txt
+- type: Lifecycle
+  url: lifecycle/lessen-lifecycle.yml
+- type: VulnerabilityDisclosure
+  url: security/lessen-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/lessen-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
