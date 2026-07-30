@@ -1,0 +1,67 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTP probes of Lessen web hosts
+notes: >-
+  No RFC 9116 security.txt, OIDC discovery, RFC 8414 authorization-server metadata,
+  RFC 9727 api-catalog or ai-plugin.json document is served on any Lessen host.
+  www.lessenpro.com returns HTTP 200 for several /.well-known/ paths, but those are
+  single-page-app catch-all responses returning the Lessen Pro HTML shell
+  (content-type text/html, <title>Lessen Pro</title>) — soft 404s, not discovery
+  documents. Nothing was saved verbatim. No WellKnown / SecurityTxt / APICatalog
+  pointer is wired in apis.yml because no document genuinely exists.
+hosts:
+- host: https://www.lessen.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://lessen.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://www.lessenpro.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 200
+    soft_404: true
+    content_type: text/html
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    soft_404: true
+    content_type: text/html
+  - path: /.well-known/api-catalog
+    status: 200
+    soft_404: true
+    content_type: text/html
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://client-one.smsassist.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 302
+    note: redirects to authentication gate; no anonymous discovery surface
+  - path: /.well-known/openid-configuration
+    status: 302
+  - path: /.well-known/oauth-authorization-server
+    status: 302
+  - path: /.well-known/api-catalog
+    status: 302
+  - path: /.well-known/ai-plugin.json
+    status: 302

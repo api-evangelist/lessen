@@ -1,0 +1,123 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.lessen.com/integration
+notes: >-
+  Lessen lists named platform integrations on its integrations page but publishes
+  no technical detail — no REST API, webhook, SFTP or file-format documentation,
+  and no OpenAPI on the Lessen side. Every entry below is therefore listing-only
+  (arazzo: null, status: pending-partner-spec). No Arazzo workflow was authored
+  because there is no Lessen operation to reference; nothing here is fabricated.
+integrations:
+- slug: accuweather
+  label: AccuWeather
+  partner: accuweather
+  category: weather-data
+  use_case: Weather data feeding service scheduling and snow/ice event triggers.
+  arazzo: null
+  status: pending-partner-spec
+- slug: assurant
+  label: Assurant
+  partner: assurant
+  category: insurance
+  use_case: Insurance and warranty claims tied to property service events.
+  arazzo: null
+  status: pending-partner-spec
+- slug: avalara
+  label: Avalara
+  partner: avalara
+  category: tax
+  use_case: Sales and use tax determination on work-order invoicing.
+  arazzo: null
+  status: pending-partner-spec
+- slug: fexa
+  label: Fexa
+  partner: fexa
+  category: facilities-management
+  use_case: Facilities maintenance work-order exchange with client CMMS.
+  arazzo: null
+  status: pending-partner-spec
+- slug: google-maps
+  label: Google Maps
+  partner: google
+  category: mapping
+  use_case: Embedded in One by Lessen for mapping, routing and location-based service coordination.
+  arazzo: null
+  status: pending-partner-spec
+- slug: happyco
+  label: HappyCo
+  partner: happyco
+  category: property-inspection
+  use_case: Routes maintenance work identified in HappyCo inspections to Lessen's vendor network.
+  arazzo: null
+  status: pending-partner-spec
+- slug: hireright
+  label: HireRight
+  partner: hireright
+  category: background-screening
+  use_case: Vendor and technician background screening in affiliate onboarding.
+  arazzo: null
+  status: pending-partner-spec
+- slug: ivueit
+  label: IVueit
+  partner: ivueit
+  category: property-inspection
+  use_case: On-demand site verification and photo capture for property condition.
+  arazzo: null
+  status: pending-partner-spec
+- slug: officetrax
+  label: OfficeTrax
+  partner: officetrax
+  category: facilities-management
+  use_case: CMMS work-order interchange for commercial facilities clients.
+  arazzo: null
+  status: pending-partner-spec
+- slug: omnia-partners
+  label: OMNIA Partners
+  partner: omnia-partners
+  category: procurement
+  use_case: Group purchasing contract vehicle for facilities services.
+  url: https://www.lessen.com/integrations/omnia-partners
+  arazzo: null
+  status: pending-partner-spec
+- slug: propertymeld
+  label: Property Meld
+  partner: propertymeld
+  category: maintenance-coordination
+  use_case: Resident maintenance request intake routed to Lessen vendors.
+  arazzo: null
+  status: pending-partner-spec
+- slug: seeknow
+  label: SeekNow
+  partner: seeknow
+  category: property-inspection
+  use_case: Brings inspection statuses, data and photo documentation into One by Lessen.
+  arazzo: null
+  status: pending-partner-spec
+- slug: servicechannel
+  label: ServiceChannel
+  partner: servicechannel
+  category: facilities-management
+  use_case: Enterprise facilities work-order and provider management interchange.
+  arazzo: null
+  status: pending-partner-spec
+- slug: sibi
+  label: Sibi
+  partner: sibi
+  category: procurement
+  use_case: Materials and appliance procurement for property projects.
+  arazzo: null
+  status: pending-partner-spec
+- slug: suite-spot
+  label: Suite Spot
+  partner: suite-spot
+  category: maintenance-coordination
+  use_case: Multifamily maintenance and turn coordination.
+  arazzo: null
+  status: pending-partner-spec
+- slug: yardi
+  label: Yardi
+  partner: yardi
+  category: property-management-erp
+  use_case: Property management system of record for work orders, units and invoicing.
+  arazzo: null
+  status: pending-partner-spec

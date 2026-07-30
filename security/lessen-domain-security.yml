@@ -1,0 +1,35 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.lessen.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  3 16:44:19 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: status.lessen.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Oct  7 18:03:19 2026 GMT
+  hsts: false
+  note: status page CNAME -> status.hyperping.io (Hyperping-hosted)
+- host: www.lessenpro.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 20 19:26:57 2026 GMT
+  hsts: false
+  note: Lessen Pro affiliate/contractor product on a separate registrable domain
+domains:
+- domain: lessen.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none
+- domain: lessenpro.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none

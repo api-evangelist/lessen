@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: searched
+source: https://status.lessen.com/
+versioning: null
+deprecation: null
+sla: null
+status_page: https://status.lessen.com/
+status_page_provider: hyperping
+status_page_evidence:
+  dns: status.lessen.com CNAME status.hyperping.io
+  note: >-
+    First-party: the CNAME is published in the lessen.com DNS zone, which only
+    Lessen controls. The page itself is a client-rendered single-page app titled
+    "System Status" with no server-rendered component list, so no component or
+    incident inventory could be captured.
+deprecated_operations: []
+notes: >-
+  Lessen publishes no public API versioning policy, no deprecation or sunset
+  policy, no RFC 8594 Sunset/Deprecation header documentation, and no public SLA
+  or uptime target — consistent with having no public developer program. The
+  status page is the only operational-transparency surface found. No Deprecation
+  pointer is wired in apis.yml because no deprecation policy exists.
