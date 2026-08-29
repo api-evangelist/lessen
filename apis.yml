@@ -14,6 +14,17 @@ description: 'Lessen is a Scottsdale, Arizona based property services and facili
   backed by Fifth Wall and General Catalyst. Lessen publishes no public developer
   portal, API reference or OpenAPI definition; its named platform integrations are
   delivered as private partner connections rather than a self-serve API program.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
